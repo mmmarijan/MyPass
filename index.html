@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyPass</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>MyPass</h1>
+
+    <label>Benutzername / E-Mail</label>
+    <input type="text" id="username-email" placeholder="z.B. muster@mustermail.com">
+
+    <label>Eigenes Passwort (optional)</label>
+    <input type="text" id="custom-password" placeholder="Eigenes Passwort eingeben, oder Passwort Generieren lassen">
+
+    <button class="btn" id="toggle-generator">🔐 Passwortgenerator anzeigen</button>
+
+    <div class="generator-section" id="generator-section">
+      <label>Länge</label>
+      <input type="number" id="password-length" value="12" min="6" max="32">
+      <button class="btn" id="generate-password">Zufälliges Passwort generieren</button>
+      <input type="text" id="generated-password" readonly placeholder="Generiertes Passwort">
+    </div>
+
+    <button class="btn" id="save-btn">Speichern</button>
+
+    <ul id="data-list"></ul>
+
+    <footer>
+      Developed by: <a href="https://about-mmmarijan.vercel.app" target="_blank" id="developer">MMMARIJAN</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
